@@ -16,7 +16,7 @@ class KnightPathFinder
         [[1,2],[2,1]].each do |offsets| 
             [offsets[0],-offsets[0]].each do |x_offset|
                 [offsets[1],-offsets[1]].each do |y_offset|
-                    moves << [x + x_offset,y + y_offset] if (x + x_offset).between?(0,5) && (y + y_offset).between?(0,5)
+                    moves << [x + x_offset,y + y_offset] if (x + x_offset).between?(0,7) && (y + y_offset).between?(0,7)
                 end
             end
         end
